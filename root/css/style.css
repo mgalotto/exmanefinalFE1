@@ -1,42 +1,83 @@
-/*Header*/
 @media(min-width:1440px){
     body{width:1440px;
-         margin:auto
-         font
+        height: 2639px;
+        font-family: 'Be Vietnam Pro', sans-serif;       
+
+/*                 NAVMENU + LOGO             */
 
     }
     header {box-sizing: border-box;
-            align-items:center;
-            display:flex;
-            flex-direction: row;
-            
-            justify-content:space-around;
-        
+        align-items:center;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 174px;
+        padding:65px;        
     }
-    .list { display:flex;
+    .list { display: flex;
             flex-direction: row;
-            font-family: 'Be Vietnam Pro', sans-serif;
-            
+            list-style-type: none;
     }
-    .list li{padding: 13px;
-            font-weight: 300;   
-            
+    li{margin: 15px; 
     }
     .getstarted{background-color:#8B48BF;
-                border-radius:50px;
-                color:#FFFFFF;
-                padding:12.5px 30.5px;
+        border-radius:50px;
+        color:#FFFFFF;
+        padding:12.5px 30.5px;
     }
 
 
+/*         HOME                 */
 
-    /*primer seccion*/
     .firstsection{display:flex;
-                  justify-content: space-around;
-                  margin-left: 165px;
-                  margin-right: 146px;   
-            
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 165px;
+        margin-right: 146px;           
     }
+
+/*                SOBRE NOSOTROS            */
+
+
+
+
+/*              TESTIMONIOS                  */
+
+    .S3flex{box-sizing: border-box;
+        width: 1298px;
+        height: 478;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .S3div{display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:0;
+        align-items: center;
+        background-color:#FAFAFA;
+    }
+    div.S3div article{display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    div.S3div article p{padding:15px;
+        text-align: center;
+
+    }
+    div.S3div img{width: 70px;
+           height: 70px;
+           position: relative;
+           top:-35px;
+
+    }
+    /*           frame prefooter           */
+
+
+
+    /*                footer               */
+
 
 }
    
