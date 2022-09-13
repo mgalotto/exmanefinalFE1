@@ -15,9 +15,8 @@
         align-items:center;
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
-        height: 174px;
-              
+        justify-content: space-between; 
+        padding: 0px 165px;            
     }
     .list { display: flex;
             flex-direction: row;
@@ -30,29 +29,34 @@
             border-radius:50px;
             color:#FFFFFF;
             padding:12.5px 30.5px;
+            font-size: 13px;
     }
 
 
-/*         HOME                 */
+/*                     HOME                 */
 
     .home{display:flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: row;
-        width: 1110px;
-        height: 525px;
-        margin: 0 165px;          
+        padding:0px 165px;        
     }
     .home article{display:flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-right: 15px;
+        padding-right: 130px;
         font-size: 1em;
-
     }
 
 
-/*                SOBRE NOSOTROS            */
 
+/*                SOBRE NOSOTROS            */
+    .sobrenos{display:flex;
+        flex-direction:row;
+        padding: 0px 165px;        
+    }
+    .whatsdif{display:flex;
+        flex-direction:column;
+    }
 
 
 
@@ -64,7 +68,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        
+        padding:0px 71px;
     }
     .S3div{display:flex;
         flex-direction: row;
@@ -83,12 +87,33 @@
 
     }
     div.S3div img{width: 70px;
-           height: 70px;
-           position: relative;
-           top:-35px;
+        height: 70px;
+        position: relative;
+        top:-35px;
 
     }
     /*           frame prefooter           */
+    .prefooter{display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #8B48BF;
+        height: 224px;
+        padding: 0px 165px;
+    }
+    .getstarted2{background-color:#FFFFFF;
+        border-radius:50px;
+        color:#8B48BF;
+        padding:12.5px 30.5px;
+        font-size: 13px; 
+        justify-self: flex-end;
+
+    }
+    section.prefooter h2{
+        color:#FFFFFF;
+        font-size: 36px;
+        width: 438px;
+        justify-self: flex-start;   
+    }
 
 
 
