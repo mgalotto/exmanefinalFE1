@@ -7,7 +7,7 @@
     body{width:1440px;
         height: 2639px;
         font-family: 'Be Vietnam Pro', sans-serif;
-        margin:auto;
+        margin: auto;
 /*                 NAVMENU + LOGO             */
 
     }
@@ -15,12 +15,14 @@
         align-items:center;
         display:flex;
         flex-direction: row;
+        height: 174px;
         justify-content: space-between; 
         padding: 0px 165px;            
     }
     .list { display: flex;
             flex-direction: row;
             list-style-type: none;
+            font-size: 0.8125rem ;
 
     }
     li{margin: 0px 15px; 
@@ -29,24 +31,34 @@
             border-radius:50px;
             color:#FFFFFF;
             padding:12.5px 30.5px;
-            font-size: 13px;
+            font-size: 0.8125rem;
     }
 
 
 /*                     HOME                 */
 
     .home{display:flex;
-        justify-content: space-between;
         flex-direction: row;
-        padding:0px 165px;        
+        justify-content: space-between;
+        margin:40px 165px 100px ;        
     }
-    .home article{display:flex;
+    section.home article{display:flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-right: 130px;
-        font-size: 1em;
-    }
+        justify-content:center;
+        align-items:flex-start;
 
+    }
+    h1{font-size: 3.625rem;
+        color:#232C50;
+        line-height: 4.125rem;
+        margin-bottom: 0px;
+        align-self: stretch;
+    
+    }
+    section.home p{width: 350px;
+        height: 71px;
+        font-weight: 500;
+    }
 
 
 /*                SOBRE NOSOTROS            */
@@ -63,7 +75,6 @@
 /*              TESTIMONIOS                  */
 
     .testimonios{box-sizing: border-box;
-        width: 1298px;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -95,6 +106,7 @@
     /*           frame prefooter           */
     .prefooter{display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         background-color: #8B48BF;
         height: 224px;
@@ -123,19 +135,4 @@
 }
 
 @media(min-width:480px){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
