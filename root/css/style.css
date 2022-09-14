@@ -40,7 +40,8 @@
     .home{display:flex;
         flex-direction: row;
         justify-content: space-between;
-        margin:40px 165px 100px ;        
+        margin:40px 110px 100px 165px;
+        height: 549px;        
     }
     section.home article{display:flex;
         flex-direction: column;
@@ -52,7 +53,7 @@
         color:#232C50;
         line-height: 4.125rem;
         margin-bottom: 0px;
-        align-self: stretch;
+        padding: 0px;
     
     }
     section.home p{width: 350px;
@@ -62,24 +63,52 @@
 
 
 /*                SOBRE NOSOTROS            */
-    .sobrenos{display:flex;
+    .sobrenos{display: flex;
         flex-direction:row;
-        padding: 0px 165px;        
+        justify-content: space-between;
+        margin: 0px 165px;
+        height: 549px;
     }
     .whatsdif{display:flex;
         flex-direction:column;
+        height: 212px;
+        width:433px;
+        background-color: aqua;     
+    }
+    span{
+        background-color: #8B48BF;
+        padding:10px 25px;
+        border-radius: 30px;
+        color: #FFFFFF;
+        margin-right: 23px;
+    }
+    div.whatsdif article{display: flex;
+        flex-direction: column;
+        width: 551px;
+        height: 162px;
+    }
+    div.whatsdif p{margin:0px 24px 0px 92px;
+        color:#B3B2B7;
+    }
+    article.whatsdif h3{font-size: 2.25rem;
+    }
+    article.whatsdif p{font-weight: 500;
+        margin-right: 96px;
     }
 
 
 
 /*              TESTIMONIOS                  */
 
-    .testimonios{box-sizing: border-box;
-        display:flex;
+    .testimonios{display:flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding:0px 71px;
+        margin: 124px 71px 180px;
+        height: 478px; 
+    }
+    section.testimonios h3{ font-size: 2.5rem;
+        margin-bottom: 109px;
     }
     .S3div{display:flex;
         flex-direction: row;
@@ -130,7 +159,10 @@
 
 
     /*                footer               */
-    footer {background-color: #1E1E26;}
+    footer {background-color: #1E1E26;
+        height: 247px;
+    }
+
 
 }
 
