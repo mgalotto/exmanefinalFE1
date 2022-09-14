@@ -10,10 +10,10 @@
         width:vw;
     }
     .getstarted{background-color:#8B48BF;
-            border-radius:50px;
-            color:#FFFFFF;
-            font-size: 0.8125rem;
-            padding:12.5px 30.5px;
+        border-radius:50px;
+        color:#FFFFFF;
+        font-size: 0.8125rem;
+        padding:12.5px 30.5px;
 
     }
     .getstarted:hover{background-color:rgba(139, 72, 191, 0.7);
@@ -192,7 +192,7 @@
     .footerdiv{display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding:53px 165px;
+        padding: 53px 0px;
 
     }
     footer ul{color:#FFFFFF;
@@ -214,10 +214,35 @@
     }
     footer p{color: #8C8C94;
         font-weight: 500;
-        font-size: 0.78125rem;
+        font-size: 0.625rem;
         
     }
-    .copyright{justify-content: space-between;}
+    .copyright{display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    button{border-radius: 50px;
+        border:none;
+        background-color: #8B48BF;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        margin-right: 19px;
+        padding: 10px;
+        height: 42px;
+        width: 63px;
+        
+    }
+    input {border-radius: 50px;
+        align-self: flex-end;
+        border:none;
+        padding:10px;
+        margin-left: 59px;
+
+        height: 44px;
+        width: 201px;
+
+
+    }
 
 }
 
