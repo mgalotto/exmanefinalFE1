@@ -4,34 +4,51 @@
 
 @media(min-width:1440px){
 
-    body{width:1440px;
+    body{font-family: 'Be Vietnam Pro', sans-serif;
         height: 2639px;
-        font-family: 'Be Vietnam Pro', sans-serif;
         margin: auto;
-/*                 NAVMENU + LOGO             */
+        width:vw;
+    }
+    .getstarted{background-color:#8B48BF;
+            border-radius:50px;
+            color:#FFFFFF;
+            font-size: 0.8125rem;
+            padding:12.5px 30.5px;
 
     }
-    header {box-sizing: border-box;
+    .getstarted:hover{background-color:rgba(139, 72, 191, 0.7);
+    }
+    
+    
+
+/*                 HEADER NAVMENU + LOGO             */
+
+
+    header {display:flex;
         align-items:center;
-        display:flex;
         flex-direction: row;
         height: 174px;
         justify-content: space-between; 
         padding: 0px 165px;            
     }
-    .list { display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            font-size: 0.8125rem ;
+    .list {display: flex;
+        flex-direction: row;
+        font-size: 0.8125rem ;
+        list-style-type: none;
+
 
     }
-    li{margin: 0px 15px; 
+    ul.list li{margin: 0px 15px; 
     }
-    .getstarted{background-color:#8B48BF;
-            border-radius:50px;
-            color:#FFFFFF;
-            padding:12.5px 30.5px;
-            font-size: 0.8125rem;
+    header div{background-color:#8B48BF;
+        border-radius:50px;
+        color:#FFFFFF;
+        font-size: 0.8125rem;
+        padding:12.5px 30.5px;
+
+    }
+    .hamburger{display:none;
+
     }
 
 
@@ -72,8 +89,7 @@
     .whatsdif{display:flex;
         flex-direction:column;
         height: 212px;
-        width:433px;
-        background-color: aqua;     
+        width:433px;   
     }
     span{
         background-color: #8B48BF;
@@ -104,35 +120,42 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 124px 71px 180px;
-        height: 478px; 
+        margin: 0px 71px 180px;
+        flex-wrap: nowrap; 
     }
+
     section.testimonios h3{ font-size: 2.5rem;
         margin-bottom: 109px;
     }
+
     .S3div{display:flex;
+        background-color:#FAFAFA;
+        align-content: center;
         flex-direction: row;
         justify-content: center;
-        margin:0;
-        align-content: center;
-        background-color:#FAFAFA;
+        margin-bottom:40px;        
     }
+
     div.S3div article{display:flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
     }
+
     div.S3div article p{padding:15px;
         text-align: center;
 
     }
+
     div.S3div img{width: 70px;
         height: 70px;
         position: relative;
         top:-35px;
 
     }
-    /*           frame prefooter           */
+
+    /*           FRAME PREFOOTER           */
+
     .prefooter{display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -141,6 +164,7 @@
         height: 224px;
         padding: 0px 165px;
     }
+
     .getstarted2{background-color:#FFFFFF;
         border-radius:50px;
         color:#8B48BF;
@@ -149,6 +173,7 @@
         justify-self: flex-end;
 
     }
+
     section.prefooter h2{
         color:#FFFFFF;
         font-size: 36px;
@@ -158,13 +183,70 @@
 
 
 
-    /*                footer               */
-    footer {background-color: #1E1E26;
-        height: 247px;
-    }
+    /*               FOOTER             */
 
+    footer {background-color: #1E1E26;
+ 
+
+    }
+    .footerdiv{display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding:53px 165px;
+
+    }
+    footer ul{color:#FFFFFF;
+        flex-direction: column;
+        list-style-type: none;
+        line-height: 28px;
+        font-weight: 400;
+
+        
+
+    }
+    .footericons{display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .social{display:flex;
+        justify-content: space-between;        
+    }
+    footer p{color: #8C8C94;
+        font-weight: 500;
+        font-size: 0.78125rem;
+        
+    }
+    .copyright{justify-content: space-between;}
 
 }
 
-@media(min-width:480px){
+/**           smartphones                    **/
+
+@media(min-width:480px) and (max-width:1439px){
+    body{font-family: 'Be Vietnam Pro', sans-serif;
+        margin: auto;
+        width:vw;
+    }
+
+    /*                 NAVMENU + LOGO             */
+    header {display:flex;
+        align-items:center;
+        flex-direction: row;
+        height: 60px;
+        justify-content: space-between;
+        margin: 0px 36px;            
+    }
+
+    .list { display: none;
+        
+    }
+
+    header div{display:none;
+
+    }
+
+
+
+
 }
