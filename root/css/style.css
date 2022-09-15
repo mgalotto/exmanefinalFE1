@@ -277,6 +277,7 @@
         color: #8C8C94;
         font-weight: 500;
         font-size: 0.625rem;
+        text-align: right;
 
     }
 
@@ -290,6 +291,7 @@
         border-radius: 50px;
         border: none;
         background-color: #8B48BF;
+        color:#FFFFFF;
         font-size: 0.8125rem;
         font-weight: 500;
         padding: 10px;
