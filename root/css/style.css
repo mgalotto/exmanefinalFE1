@@ -26,6 +26,9 @@
 
     .getstarted:hover {
         background-color: rgba(139, 72, 191, 0.7);
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        cursor:pointer;
     }
 
 
@@ -103,10 +106,6 @@
         font-weight: 500;
     }
 
-    section.home img {
-        order: -1;
-
-    }
 
 
     /*                SOBRE NOSOTROS            */
@@ -222,6 +221,7 @@
         padding: 12.5px 30.5px;
         font-size: 13px;
         justify-self: flex-end;
+        cursor:pointer;
 
     }
 
@@ -236,7 +236,7 @@
 
     /*               FOOTER             */
 
-    footer {
+    footer {position:relative;
         background-color: #1E1E26;
 
 
@@ -244,74 +244,76 @@
 
     .footerdiv {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 53px 165px;
+
+    }
+    .logoicons{display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .social{display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 53px 0px;
 
+
+    }
+
+    .lista{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 390px;
+        height: 140px;
     }
 
     footer ul {
         color: #FFFFFF;
-        flex-direction: column;
         list-style-type: none;
         line-height: 28px;
         font-weight: 400;
-
-
-
+        padding: 0px;
     }
-
-    .footericons {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-    }
-
-    .social {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer p {
-        color: #8C8C94;
-        font-weight: 500;
-        font-size: 0.625rem;
-        text-align: right;
-
-    }
-
-    .copyright {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    footer button {
+    input {
         border-radius: 50px;
-        border: none;
-        background-color: #8B48BF;
-        color:#FFFFFF;
-        font-size: 0.8125rem;
-        font-weight: 500;
-        padding: 10px;
-        height: 42px;
-        width: 63px;
-
-    }
-
-    footer input {
-        border-radius: 50px;
-        align-self: flex-end;
-        border: none;
-        padding: 10px;
-        margin-left: 59px;
-        height: 44px;
+        border:none;
+        padding:10px;
+        color: #A0A0A0;
+        font-size: 0.6875rem;
+        font-weight: 600;
         width: 201px;
+        height: 44px;
+
+    }
+    
+    form button{
+        background-color: #8B48BF;
+        width: 63px;
+        height: 42px;
+        padding:10px;
+        border-radius:  50px;
+        border:none;
+        color: #FFFFFF;
+        font-size: 0.6875rem;
 
 
     }
 
+
+
+    footer p{
+        position:absolute;
+        right: 165px;
+        bottom: 53px;
+        font-size: 0.625rem;
+        color:#8C8C94;
+        font-weight: 500;
+
+    }
+   
 }
 
 /**           smartphones                    **/
@@ -319,7 +321,7 @@
 @media(min-width:480px) and (max-width:1439px) {
     body {
         font-family: 'Be Vietnam Pro', sans-serif;
-        margin: auto;
+        margin:auto;
         width: 480px;
     }
 
@@ -335,6 +337,9 @@
 
     .getstarted:hover {
         background-color: rgba(139, 72, 191, 0.7);
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        cursor:pointer;
     }
 
 
@@ -368,6 +373,7 @@
         justify-content: space-between;
         align-items: center;
         flex: nowrap;
+        margin-bottom: 120px;
     }
 
     section.home article {
@@ -382,7 +388,7 @@
         font-size: 3.625rem;
         color: #232C50;
         line-height: 4.125rem;
-        margin-bottom: 0px;
+        margin-bottom: 28px;
         padding: 0px;
         text-align: center;
 
@@ -390,13 +396,114 @@
 
     section.home p {align-self:center;
         font-weight: 500;
-        margin: 0px 65px;
+        margin: 0px 65px 28px;
         text-align: center;
     }
     section.home img{
         order: -1;
     }
 
+    /*                SOBRE NOSOTROS            */
+    .sobrenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0px 0px 100px 24px;
+    }
 
+    .whatsdif {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    article.whatsdif h3 {
+        font-size: 2.25rem;
+        color:#232851;
+        align-items: center;
+        text-align: center;
+    }
+
+    span {
+        background-color: #8B48BF;
+        padding: 10px 25px;
+        border-radius: 30px;
+        color: #FFFFFF;
+        margin-right: 23px;
+    }
+    section.sobrenos h4{
+        background-color: rgba(139, 72, 191, 0.3);
+        color:#323851;
+        padding: 10px 0px;
+        border-radius:50px 0px 0px 50px;
+    }
+
+    div.whatsdif article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.whatsdif p {
+        margin: 31px 0px 0px 0px;
+        font-size:1.125rem;
+        line-height:1.625rem ;
+        color: #B3B2B7;
+    }
+
+
+
+    article.whatsdif p {
+        font-weight: 500;
+        align-content: center;
+        text-align:center;
+        margin:0px 24px 103px 0px;
+    }
+
+
+    /*              TESTIMONIOS                  */
+
+    .testimonios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 71px 180px;
+        flex-wrap: nowrap;
+    }
+
+    section.testimonios h3 {
+        font-size: 2.5rem;
+        margin-bottom: 109px;
+    }
+
+    .S3div {
+        display: flex;
+        background-color: #FAFAFA;
+        align-content: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    div.S3div article {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    div.S3div article p {
+        padding: 15px;
+        text-align: center;
+
+    }
+
+    div.S3div img {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: -35px;
+
+    }
+    
 
 }
