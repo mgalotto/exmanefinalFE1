@@ -30,6 +30,10 @@
         transition-duration: 0.5s;
         cursor:pointer;
     }
+    li:hover{
+        cursor:pointer;       
+
+    }
 
 
 
@@ -56,6 +60,7 @@
 
     ul.list li {
         margin: 0px 15px;
+        color:#242E52;
     }
 
     header div {
@@ -87,7 +92,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: left;
 
     }
 
@@ -169,6 +174,8 @@
     section.testimonios h3 {
         font-size: 2.5rem;
         margin-bottom: 109px;
+        color:#242E53;
+        font-weight: 700;
     }
 
     .S3div {
@@ -301,7 +308,10 @@
 
 
     }
+    form button:hover{
+        cursor:pointer;
 
+    }
 
 
     footer p{
@@ -466,22 +476,25 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0px 71px 180px;
-        flex-wrap: nowrap;
+        margin-bottom: 77px;
     }
 
     section.testimonios h3 {
         font-size: 2.5rem;
         margin-bottom: 109px;
+        text-align: center;
+        color:#242E53;
+        font-weight: 700;
     }
 
     .S3div {
-        display: flex;
+        display:flex;
         background-color: #FAFAFA;
         align-content: center;
         flex-direction: row;
         justify-content: center;
         margin-bottom: 40px;
+
     }
 
     div.S3div article {
@@ -489,6 +502,13 @@
         flex-direction: column;
         justify-items: center;
         align-items: center;
+
+    }
+    div.S3div article:nth-child(1) {
+        display: none;
+    }
+    div.S3div article:nth-child(3) {
+        display: none;
     }
 
     div.S3div article p {
