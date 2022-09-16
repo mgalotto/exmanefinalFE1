@@ -539,6 +539,7 @@
         justify-content: space-around;
         align-items: center;
         background-color: #8B48BF;
+        padding-bottom:40px;
     }
 
     .getstarted2 {
@@ -555,9 +556,12 @@
 
     section.prefooter h2 {
         color: #FFFFFF;
-        font-size: 36px;
-        width: 438px;
-        justify-self: flex-start;
+        font-size: 40px;
+        line-height: 48px;
+        width: 324px;
+        text-align: center;
+        font-weight: 700;
+        margin: 40px 80px 50px;
     }
 
 
