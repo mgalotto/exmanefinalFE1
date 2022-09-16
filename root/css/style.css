@@ -11,7 +11,7 @@
     body {
         font-family: 'Be Vietnam', sans-serif;
         margin: auto;
-        width: 1440px;
+        width: 100vw;
     }
 
     .getstarted {
@@ -85,14 +85,13 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 40px 110px 100px 165px;
-        height: 549px;
     }
 
     section.home article {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
+        align-items: flex-start;
 
     }
 
@@ -328,9 +327,9 @@
 
 /**           smartphones                    **/
 
-@media(min-width:480px) and (max-width:1439px) {
+@media(min-width:0px) and (max-width:1439px) {
     body {
-        font-family: 'Be Vietnam Pro', sans-serif;
+        font-family: 'Be Vietnam', sans-serif;
         margin:auto;
         width: 480px;
     }
@@ -358,7 +357,6 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        height: 60px;
         justify-content: space-between;
     }
 
@@ -411,6 +409,7 @@
     }
     section.home img{
         order: -1;
+        scale:80vw;
     }
 
     /*                SOBRE NOSOTROS            */
@@ -524,6 +523,141 @@
         top: -35px;
 
     }
+    .S3div:nth-child(1){
+        display:none;
+    }
+    .S3div:nth-child(3){
+        display:none;
+    }
+
+
+    /*           FRAME PREFOOTER           */
+
+    .prefooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8B48BF;
+    }
+
+    .getstarted2 {
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        border: none;
+        color: #8B48BF;
+        padding: 12.5px 30.5px;
+        font-size: 13px;
+        justify-self: flex-end;
+        cursor:pointer;
+
+    }
+
+    section.prefooter h2 {
+        color: #FFFFFF;
+        font-size: 36px;
+        width: 438px;
+        justify-self: flex-start;
+    }
+
+
+
+    /*               FOOTER             */
+
+    footer {
+        background-color: #1E1E26;
+
+
+    }
+
+    .footerdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .social{display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        order:-1;
+        margin-bottom:45px;
+
+
+    }
+
+    .logoicons{display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        order:3;
+        width: 380px;
+        flex-wrap: wrap;
+
+    }
+    .logoimg{
+        align-self: center;
+        padding:10px;
+        margin-bottom:25px;
+    }
+ 
+    .lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 25px;
+        padding: 0px;
+        height: 140px;
+        width: 320px;
+        order:2;
+        line-height: 28px;
+
+    }
+
+    footer ul {
+        color: #FFFFFF;
+        list-style-type: none;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    input {
+        border-radius: 50px;
+        border:none;
+        padding:10px;
+        color: #A0A0A0;
+        width: 308px;
+        height: 44px;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        order: -30;
+        margin: 52px 9px 38px;
     
+
+    }
+    
+    form button{
+        background-color: #8B48BF;
+        width: 63px;
+        height: 42px;
+        padding:10px;
+        border-radius:  50px;
+        border:none;
+        color: #FFFFFF;
+        font-size: 0.6875rem;
+
+
+    }
+
+
+
+    footer p{
+        bottom: 53px;
+        font-size: 0.625rem;
+        color:#8C8C94;
+        font-weight: 500;
+        order:30;
+        padding:10px;
+
+    }
 
 }
